@@ -11,48 +11,48 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f151c;--card:#18212b;--ink:#eef3f8;--sub:#9fb0c2;--line:#2a3643;--sea:#5ab4ea;--sea2:#14293a;--park:#5cc58a;--park2:#13291d;--gold:#e7b94a;--gold2:#2b2412;--red:#ff8a7a;--red2:#3a1c18}}
 :root[data-theme="dark"]{--bg:#0f151c;--card:#18212b;--ink:#eef3f8;--sub:#9fb0c2;--line:#2a3643;--sea:#5ab4ea;--sea2:#14293a;--park:#5cc58a;--park2:#13291d;--gold:#e7b94a;--gold2:#2b2412;--red:#ff8a7a;--red2:#3a1c18}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:18px;line-height:1.6;word-break:keep-all}
+body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:25px;line-height:1.6;word-break:keep-all}
 .wrap{max-width:760px;margin:0 auto;padding:16px 16px 48px}
 .hero{background:linear-gradient(135deg,#0c6fa8,#2e8b57);color:#fff;border-radius:20px;padding:26px 22px}
-.hero small{opacity:.85;font-size:15px}
-.hero h1{margin:4px 0 6px;font-size:30px;line-height:1.25;font-weight:900}
-.hero p{margin:0;font-size:17px;opacity:.95}
+.hero small{opacity:.85;font-size:21px}
+.hero h1{margin:4px 0 6px;font-size:42px;line-height:1.25;font-weight:900}
+.hero p{margin:0;font-size:24px;opacity:.95}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.chips span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 12px;font-size:15px;font-weight:700}
+.chips span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 12px;font-size:21px;font-weight:700}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:14px}
-.card h2{margin:0 0 12px;font-size:22px;font-weight:900}
+.card h2{margin:0 0 12px;font-size:31px;font-weight:900}
 .pt{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px dashed var(--line)}
 .pt:first-of-type{border-top:0}
-.num{flex:0 0 38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;background:var(--sea);font-size:19px}
+.num{flex:0 0 50px;height:50px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;background:var(--sea);font-size:27px}
 .pt:nth-of-type(2) .num{background:var(--park)}.pt:nth-of-type(3) .num{background:var(--gold)}
-.pt b{font-size:20px;display:block}
-.say{background:var(--gold2);border-left:5px solid var(--gold);border-radius:10px;padding:10px 14px;margin-top:6px;font-size:17px}
-.say::before{content:"🗣 이렇게 말하기 ";font-weight:900;color:var(--gold);display:block;font-size:14px}
-table{width:100%;border-collapse:collapse;font-size:17px}
+.pt b{font-size:28px;display:block}
+.say{background:var(--gold2);border-left:5px solid var(--gold);border-radius:10px;padding:10px 14px;margin-top:6px;font-size:24px}
+.say::before{content:"🗣 이렇게 말하기 ";font-weight:900;color:var(--gold);display:block;font-size:20px}
+table{width:100%;border-collapse:collapse;font-size:24px}
 th,td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-th{color:var(--sub);font-weight:500;width:34%}
-td b{font-size:18px}
-.price td:last-child,.price th:last-child{text-align:right;white-space:nowrap}
+th{color:var(--sub);font-weight:500;width:28%}
+td b{font-size:25px}
+.price td:last-child,.price th:last-child{text-align:right}
 .price thead th{color:var(--ink);font-weight:700;width:auto}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
 .box{border-radius:14px;padding:14px;background:var(--sea2)}
 .box.p{background:var(--park2)}.box.g{background:var(--gold2)}.box.r{background:var(--red2)}
-.box h3{margin:0 0 6px;font-size:18px}
-.box ul{margin:0;padding-left:18px;font-size:16px}
-.big{font-size:26px;font-weight:900;color:var(--sea)}
+.box h3{margin:0 0 6px;font-size:25px}
+.box ul{margin:0;padding-left:18px;font-size:22px}
+.big{font-size:36px;font-weight:900;color:var(--sea)}
 .qa{border-top:1px dashed var(--line);padding:12px 0}
 .qa:first-of-type{border-top:0}
 .qa .q{font-weight:900}.qa .q::before{content:"Q. ";color:var(--sea)}
 .qa .a::before{content:"A. ";font-weight:900;color:var(--park)}
-.warn{background:var(--red2);border-radius:14px;padding:14px 16px;font-size:16px}
+.warn{background:var(--red2);border-radius:14px;padding:14px 16px;font-size:22px}
 .warn b{color:var(--red)}
-.foot{color:var(--sub);font-size:14px;margin-top:18px}
-.memo{border:2px dashed var(--line);border-radius:12px;padding:12px 14px;font-size:17px}
+.foot{color:var(--sub);font-size:20px;margin-top:18px}
+.memo{border:2px dashed var(--line);border-radius:12px;padding:12px 14px;font-size:24px}
 .memo div{padding:6px 0}
-@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}.hero h1{font-size:26px}body{font-size:17px}}
+@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}.hero h1{font-size:36px}body{font-size:24px}}
 @media print{body{background:#fff}.card{break-inside:avoid}}
 body.shot .wrap{max-width:none;width:1000px;padding:24px}
-body.shot{font-size:20px}
+body.shot{font-size:28px}
 </style>
 </head>
 <body>
@@ -113,7 +113,7 @@ body.shot{font-size:20px}
     <tr><td>101㎡</td><td>6억 9,930만 ~ 8억 1,850만</td></tr>
     <tr><td>110㎡</td><td>7억 6,400만 ~ 8억 8,980만</td></tr>
   </table>
-  <p style="font-size:15px;color:var(--sub);margin:10px 0 0">최초 공고가 기준 · 84㎡가 1,350세대(약 70%)로 주력 평형 · 발코니 확장비 별도(84㎡ 약 1,950만원)</p>
+  <p style="font-size:21px;color:var(--sub);margin:10px 0 0">최초 공고가 기준 · 84㎡가 1,350세대(약 70%)로 주력 평형 · 발코니 확장비 별도(84㎡ 약 1,950만원)</p>
 </div>
 </section>
 
