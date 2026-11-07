@@ -11,48 +11,54 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f151c;--card:#18212b;--ink:#eef3f8;--sub:#9fb0c2;--line:#2a3643;--sea:#5ab4ea;--sea2:#14293a;--park:#5cc58a;--park2:#13291d;--gold:#e7b94a;--gold2:#2b2412;--red:#ff8a7a;--red2:#3a1c18}}
 :root[data-theme="dark"]{--bg:#0f151c;--card:#18212b;--ink:#eef3f8;--sub:#9fb0c2;--line:#2a3643;--sea:#5ab4ea;--sea2:#14293a;--park:#5cc58a;--park2:#13291d;--gold:#e7b94a;--gold2:#2b2412;--red:#ff8a7a;--red2:#3a1c18}
 *{box-sizing:border-box}
-body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:25px;line-height:1.6;word-break:keep-all}
-.wrap{max-width:760px;margin:0 auto;padding:16px 16px 48px}
-.hero{background:linear-gradient(135deg,#0c6fa8,#2e8b57);color:#fff;border-radius:20px;padding:26px 22px}
-.hero small{opacity:.85;font-size:21px}
-.hero h1{margin:4px 0 6px;font-size:42px;line-height:1.25;font-weight:900}
-.hero p{margin:0;font-size:24px;opacity:.95}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:20px;line-height:1.65;word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:720px;margin:0 auto;padding:16px 16px 48px}
+.hero{background:linear-gradient(135deg,#0c6fa8,#2e8b57);color:#fff;border-radius:20px;padding:22px 20px}
+.hero small{opacity:.85;font-size:16px}
+.hero h1{margin:4px 0 8px;font-size:32px;line-height:1.25;font-weight:900}
+.hero p{margin:0;font-size:19px;opacity:.95}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.chips span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 12px;font-size:21px;font-weight:700}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:14px}
-.card h2{margin:0 0 12px;font-size:31px;font-weight:900}
-.pt{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px dashed var(--line)}
-.pt:first-of-type{border-top:0}
-.num{flex:0 0 50px;height:50px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;background:var(--sea);font-size:27px}
+.chips span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:3px 12px;font-size:16px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px;margin-top:14px}
+.card h2{margin:0 0 12px;font-size:24px;line-height:1.35;font-weight:900}
+.pt{padding:14px 0;border-top:1px dashed var(--line)}
+.pt:first-of-type{border-top:0;padding-top:4px}
+.pt::after{content:"";display:block;clear:both}
+.num{float:left;width:34px;height:34px;margin:0 10px 0 0;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;background:var(--sea);font-size:19px;line-height:1}
 .pt:nth-of-type(2) .num{background:var(--park)}.pt:nth-of-type(3) .num{background:var(--gold)}
-.pt b{font-size:28px;display:block}
-.say{background:var(--gold2);border-left:5px solid var(--gold);border-radius:10px;padding:10px 14px;margin-top:6px;font-size:24px}
-.say::before{content:"🗣 이렇게 말하기 ";font-weight:900;color:var(--gold);display:block;font-size:20px}
-table{width:100%;border-collapse:collapse;font-size:24px}
-th,td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-th{color:var(--sub);font-weight:500;width:28%}
-td b{font-size:25px}
+.pt b{font-size:22px;display:block;line-height:34px;margin-bottom:6px}
+.say{background:var(--gold2);border-left:5px solid var(--gold);border-radius:10px;padding:10px 14px;margin-top:10px;font-size:19px}
+.say::before{content:"🗣 이렇게 말하기 ";font-weight:900;color:var(--gold);display:block;font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:19px}
+th,td{padding:10px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:500;width:5em}
 .price td:last-child,.price th:last-child{text-align:right}
-.price thead th{color:var(--ink);font-weight:700;width:auto}
-.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
-.box{border-radius:14px;padding:14px;background:var(--sea2)}
+.price thead th{color:var(--sub);font-size:16px;width:auto}
+.price td:first-child{white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.box{border-radius:14px;padding:14px;background:var(--sea2);font-size:17px;min-width:0}
 .box.p{background:var(--park2)}.box.g{background:var(--gold2)}.box.r{background:var(--red2)}
-.box h3{margin:0 0 6px;font-size:25px}
-.box ul{margin:0;padding-left:18px;font-size:22px}
-.big{font-size:36px;font-weight:900;color:var(--sea)}
+.box h3{margin:0 0 4px;font-size:17px;color:var(--sub)}
+.box ul{margin:0;padding-left:20px;font-size:18px}
+.box ul li{margin:2px 0}
+.big{font-size:24px;line-height:1.3;font-weight:900;color:var(--sea);display:block;margin-bottom:2px}
+.box.loc h3{font-size:20px;color:var(--ink)}
 .qa{border-top:1px dashed var(--line);padding:12px 0}
-.qa:first-of-type{border-top:0}
+.qa:first-of-type{border-top:0;padding-top:0}
 .qa .q{font-weight:900}.qa .q::before{content:"Q. ";color:var(--sea)}
 .qa .a::before{content:"A. ";font-weight:900;color:var(--park)}
-.warn{background:var(--red2);border-radius:14px;padding:14px 16px;font-size:22px}
+.warn{background:var(--red2);border-radius:14px;padding:16px 18px;font-size:18px}
 .warn b{color:var(--red)}
-.foot{color:var(--sub);font-size:20px;margin-top:18px}
-.memo{border:2px dashed var(--line);border-radius:12px;padding:12px 14px;font-size:24px}
+.foot{color:var(--sub);font-size:15px;margin-top:18px}
+.memo{border:2px dashed var(--line);border-radius:12px;padding:12px 14px;font-size:19px}
 .memo div{padding:6px 0}
-@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}.hero h1{font-size:36px}body{font-size:24px}}
+.note{font-size:16px;color:var(--sub);margin:10px 0 0}
+@media (max-width:560px){.grid.loc{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:380px){.grid{grid-template-columns:minmax(0,1fr)}}
 @media print{body{background:#fff}.card{break-inside:avoid}}
 body.shot .wrap{max-width:none;width:1000px;padding:24px}
-body.shot{font-size:28px}
+body.shot{font-size:22px}
 </style>
 </head>
 <body>
@@ -88,12 +94,12 @@ body.shot{font-size:28px}
 
 <section id="p2">
 <div class="card">
-  <h2>📝 계약 조건 (손님이 제일 많이 묻는 것)</h2>
+  <h2>📝 계약 조건</h2>
   <div class="grid">
-    <div class="box"><h3>청약통장</h3><span class="big">필요 없음</span><br>주택 보유 여부도 상관없어요</div>
-    <div class="box p"><h3>동·호수</h3><span class="big" style="color:var(--park)">직접 지정</span><br>선착순으로 원하는 동·층 선택</div>
-    <div class="box g"><h3>1차 계약금</h3><span class="big" style="color:var(--gold)">1,000만원</span><br>전 타입 똑같이 정액</div>
-    <div class="box"><h3>전매</h3><span class="big">입주 전 가능</span><br>전매제한 1년(2027년 9월 이후), 거주의무 없음</div>
+    <div class="box"><h3>청약통장</h3><span class="big">필요 없음</span>주택 보유 여부도 상관없어요</div>
+    <div class="box p"><h3>동·호수</h3><span class="big" style="color:var(--park)">직접 지정</span>선착순으로 원하는 동·층 선택</div>
+    <div class="box g"><h3>1차 계약금</h3><span class="big" style="color:var(--gold)">1,000만원</span>전 타입 똑같이 정액</div>
+    <div class="box"><h3>전매</h3><span class="big">입주 전 가능</span>전매제한 1년(2027년 9월 이후), 거주의무 없음</div>
   </div>
   <table style="margin-top:14px">
     <tr><th>계약금</th><td><b>5%</b> · 1차 1,000만원, 나머지는 계약 후 30일 안에</td></tr>
@@ -104,7 +110,7 @@ body.shot{font-size:28px}
 </div>
 
 <div class="card">
-  <h2>💰 남은 세대 분양가 (84~110㎡)</h2>
+  <h2>💰 남은 세대 분양가</h2>
   <table class="price">
     <thead><tr><th>전용면적</th><th>분양가 (층마다 다름)</th></tr></thead>
     <tr><td><b>84㎡B</b></td><td><b>6억 3,300만 ~ 6억 7,590만</b></td></tr>
@@ -113,27 +119,27 @@ body.shot{font-size:28px}
     <tr><td>101㎡</td><td>6억 9,930만 ~ 8억 1,850만</td></tr>
     <tr><td>110㎡</td><td>7억 6,400만 ~ 8억 8,980만</td></tr>
   </table>
-  <p style="font-size:21px;color:var(--sub);margin:10px 0 0">최초 공고가 기준 · 84㎡가 1,350세대(약 70%)로 주력 평형 · 발코니 확장비 별도(84㎡ 약 1,950만원)</p>
+  <p class="note">최초 공고가 기준 · 84㎡가 1,350세대(약 70%)로 주력 평형 · 발코니 확장비 별도(84㎡ 약 1,950만원)</p>
 </div>
 </section>
 
 <section id="p3">
 <div class="card">
   <h2>📍 입지 자랑 포인트</h2>
-  <div class="grid">
-    <div class="box"><h3>🚇 철도</h3><ul>
+  <div class="grid loc">
+    <div class="box loc"><h3>🚇 철도</h3><ul>
       <li>수인분당선 <b>학익역</b> 도보권 (2028년 개통 예정)</li>
       <li>송도역 인천발 KTX (학익역에서 1정거장)</li>
       <li>GTX-B 연계 추진 중</li></ul></div>
-    <div class="box"><h3>🚗 도로</h3><ul>
+    <div class="box loc"><h3>🚗 도로</h3><ul>
       <li>제2경인고속도로 능해IC</li>
       <li>아암대로·인천대로</li>
       <li>인천대교·제3경인 연결 쉬움</li></ul></div>
-    <div class="box p"><h3>🏫 학세권</h3><ul>
+    <div class="box p loc"><h3>🏫 학세권</h3><ul>
       <li>용현학익중 2029년 3월 개교 예정 (단지 바로 옆)</li>
       <li>용현학익2초 신설 예정</li>
       <li>고등학교 부지 계획 · 주변 용학초·용현중·인항고</li></ul></div>
-    <div class="box p"><h3>🌳 공원·문화</h3><ul>
+    <div class="box p loc"><h3>🌳 공원·문화</h3><ul>
       <li>단지 앞 대형 <b>그랜드파크</b> 계획</li>
       <li>인천뮤지엄파크 (2028년 목표)</li>
       <li>상업지구 스타오씨엘 · 인하대병원</li></ul></div>
