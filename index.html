@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시티오씨엘 9단지 브리핑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f9;--card:#fff;--ink:#16202c;--sub:#5a6776;--line:#e1e7ee;--sea:#0c6fa8;--sea2:#e4f2fb;--park:#2e8b57;--park2:#e6f4ec;--gold:#b8860b;--gold2:#fdf4dc;--red:#c0392b;--red2:#fdecea}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f151c;--card:#18212b;--ink:#eef3f8;--sub:#9fb0c2;--line:#2a3643;--sea:#5ab4ea;--sea2:#14293a;--park:#5cc58a;--park2:#13291d;--gold:#e7b94a;--gold2:#2b2412;--red:#ff8a7a;--red2:#3a1c18}}
+:root[data-theme="dark"]{--bg:#0f151c;--card:#18212b;--ink:#eef3f8;--sub:#9fb0c2;--line:#2a3643;--sea:#5ab4ea;--sea2:#14293a;--park:#5cc58a;--park2:#13291d;--gold:#e7b94a;--gold2:#2b2412;--red:#ff8a7a;--red2:#3a1c18}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:18px;line-height:1.6;word-break:keep-all}
+.wrap{max-width:760px;margin:0 auto;padding:16px 16px 48px}
+.hero{background:linear-gradient(135deg,#0c6fa8,#2e8b57);color:#fff;border-radius:20px;padding:26px 22px}
+.hero small{opacity:.85;font-size:15px}
+.hero h1{margin:4px 0 6px;font-size:30px;line-height:1.25;font-weight:900}
+.hero p{margin:0;font-size:17px;opacity:.95}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 12px;font-size:15px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:14px}
+.card h2{margin:0 0 12px;font-size:22px;font-weight:900}
+.pt{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px dashed var(--line)}
+.pt:first-of-type{border-top:0}
+.num{flex:0 0 38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;background:var(--sea);font-size:19px}
+.pt:nth-of-type(2) .num{background:var(--park)}.pt:nth-of-type(3) .num{background:var(--gold)}
+.pt b{font-size:20px;display:block}
+.say{background:var(--gold2);border-left:5px solid var(--gold);border-radius:10px;padding:10px 14px;margin-top:6px;font-size:17px}
+.say::before{content:"🗣 이렇게 말하기 ";font-weight:900;color:var(--gold);display:block;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:17px}
+th,td{padding:9px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--sub);font-weight:500;width:34%}
+td b{font-size:18px}
+.price td:last-child,.price th:last-child{text-align:right;white-space:nowrap}
+.price thead th{color:var(--ink);font-weight:700;width:auto}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.box{border-radius:14px;padding:14px;background:var(--sea2)}
+.box.p{background:var(--park2)}.box.g{background:var(--gold2)}.box.r{background:var(--red2)}
+.box h3{margin:0 0 6px;font-size:18px}
+.box ul{margin:0;padding-left:18px;font-size:16px}
+.big{font-size:26px;font-weight:900;color:var(--sea)}
+.qa{border-top:1px dashed var(--line);padding:12px 0}
+.qa:first-of-type{border-top:0}
+.qa .q{font-weight:900}.qa .q::before{content:"Q. ";color:var(--sea)}
+.qa .a::before{content:"A. ";font-weight:900;color:var(--park)}
+.warn{background:var(--red2);border-radius:14px;padding:14px 16px;font-size:16px}
+.warn b{color:var(--red)}
+.foot{color:var(--sub);font-size:14px;margin-top:18px}
+.memo{border:2px dashed var(--line);border-radius:12px;padding:12px 14px;font-size:17px}
+.memo div{padding:6px 0}
+@media (max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}.hero h1{font-size:26px}body{font-size:17px}}
+@media print{body{background:#fff}.card{break-inside:avoid}}
+body.shot .wrap{max-width:none;width:1000px;padding:24px}
+body.shot{font-size:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section id="p1">
+<div class="hero">
+  <small>인천 미추홀구 학익동 · 현장 브리핑 자료</small>
+  <h1>시티오씨엘 9단지<br>오션파크뷰</h1>
+  <p>청약통장 없이, 동·호수 직접 골라서 계약하는 <b>선착순 분양</b></p>
+  <div class="chips"><span>총 1,949세대</span><span>최고 49층 9개 동</span><span>전 세대 남향</span><span>입주 2030년 4월</span><span>남은 세대 84~110㎡</span></div>
+</div>
+
+<div class="card">
+  <h2>⭐ 핵심 멘트 3가지</h2>
+  <div class="pt"><div class="num">1</div><div>
+    <b>1만 3천여 세대 브랜드 타운</b>
+    아이파크(HDC현대산업개발) + 힐스테이트(현대건설) + 더샵(포스코이앤씨) 3개 브랜드가 함께 만드는 복합도시예요.
+    <div class="say">1만 3천여 세대가 들어서는 시티오씨엘, 아이파크·힐스테이트·더샵 세 브랜드가 같이 짓는 브랜드 타운입니다.</div>
+  </div></div>
+  <div class="pt"><div class="num">2</div><div>
+    <b>바다와 공원이 내 집 풍경</b>
+    오션뷰 + 파크뷰 + 학세권. 단지 앞에 대형 공원(그랜드파크)이 계획되어 있고, 일부 세대는 서해와 공원을 함께 볼 수 있게 설계돼요.
+    <div class="say">바다와 공원이 내 집 풍경이 됩니다. 오션뷰, 파크뷰에 학교까지 가까운 학세권이에요.</div>
+  </div></div>
+  <div class="pt"><div class="num">3</div><div>
+    <b>1~8단지 완판, 입지는 이미 증명</b>
+    앞서 분양한 시티오씨엘 1~8단지가 모두 팔렸어요. 9단지는 검증된 입지에 들어서는 단지예요.
+    <div class="say">1단지부터 8단지까지 완판됐습니다. 입지는 이미 증명됐고, 9단지는 지금 선착순으로 동·호수를 고르실 수 있어요.</div>
+  </div></div>
+</div>
+</section>
+
+<section id="p2">
+<div class="card">
+  <h2>📝 계약 조건 (손님이 제일 많이 묻는 것)</h2>
+  <div class="grid">
+    <div class="box"><h3>청약통장</h3><span class="big">필요 없음</span><br>주택 보유 여부도 상관없어요</div>
+    <div class="box p"><h3>동·호수</h3><span class="big" style="color:var(--park)">직접 지정</span><br>선착순으로 원하는 동·층 선택</div>
+    <div class="box g"><h3>1차 계약금</h3><span class="big" style="color:var(--gold)">1,000만원</span><br>전 타입 똑같이 정액</div>
+    <div class="box"><h3>전매</h3><span class="big">입주 전 가능</span><br>전매제한 1년(2027년 9월 이후), 거주의무 없음</div>
+  </div>
+  <table style="margin-top:14px">
+    <tr><th>계약금</th><td><b>5%</b> · 1차 1,000만원, 나머지는 계약 후 30일 안에</td></tr>
+    <tr><th>중도금</th><td><b>60%</b> · 6회 나눠 냄, 이자 후불제</td></tr>
+    <tr><th>잔금</th><td><b>35%</b> · 입주할 때 (2030년 4월 예정)</td></tr>
+    <tr><th>규제</th><td>비규제지역 · 분양가상한제 미적용 · 재당첨 제한 없음</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>💰 남은 세대 분양가 (84~110㎡)</h2>
+  <table class="price">
+    <thead><tr><th>전용면적</th><th>분양가 (층마다 다름)</th></tr></thead>
+    <tr><td><b>84㎡B</b></td><td><b>6억 3,300만 ~ 6억 7,590만</b></td></tr>
+    <tr><td><b>84㎡A</b></td><td><b>6억 6,770만 ~ 7억 1,290만</b></td></tr>
+    <tr><td>95㎡</td><td>6억 9,080만 ~ 7억 7,340만</td></tr>
+    <tr><td>101㎡</td><td>6억 9,930만 ~ 8억 1,850만</td></tr>
+    <tr><td>110㎡</td><td>7억 6,400만 ~ 8억 8,980만</td></tr>
+  </table>
+  <p style="font-size:15px;color:var(--sub);margin:10px 0 0">최초 공고가 기준 · 84㎡가 1,350세대(약 70%)로 주력 평형 · 발코니 확장비 별도(84㎡ 약 1,950만원)</p>
+</div>
+</section>
+
+<section id="p3">
+<div class="card">
+  <h2>📍 입지 자랑 포인트</h2>
+  <div class="grid">
+    <div class="box"><h3>🚇 철도</h3><ul>
+      <li>수인분당선 <b>학익역</b> 도보권 (2028년 개통 예정)</li>
+      <li>송도역 인천발 KTX (학익역에서 1정거장)</li>
+      <li>GTX-B 연계 추진 중</li></ul></div>
+    <div class="box"><h3>🚗 도로</h3><ul>
+      <li>제2경인고속도로 능해IC</li>
+      <li>아암대로·인천대로</li>
+      <li>인천대교·제3경인 연결 쉬움</li></ul></div>
+    <div class="box p"><h3>🏫 학세권</h3><ul>
+      <li>용현학익중 2029년 3월 개교 예정 (단지 바로 옆)</li>
+      <li>용현학익2초 신설 예정</li>
+      <li>고등학교 부지 계획 · 주변 용학초·용현중·인항고</li></ul></div>
+    <div class="box p"><h3>🌳 공원·문화</h3><ul>
+      <li>단지 앞 대형 <b>그랜드파크</b> 계획</li>
+      <li>인천뮤지엄파크 (2028년 목표)</li>
+      <li>상업지구 스타오씨엘 · 인하대병원</li></ul></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 예상 질문과 답</h2>
+  <div class="qa"><div class="q">청약통장 없어도 되나요? 집이 있어도요?</div><div class="a">네, 둘 다 상관없어요. 선착순으로 바로 계약합니다.</div></div>
+  <div class="qa"><div class="q">처음에 돈이 얼마 필요해요?</div><div class="a">1차 계약금 1,000만원이면 계약할 수 있어요. 나머지 계약금(5%까지)은 30일 안에 내시면 돼요.</div></div>
+  <div class="qa"><div class="q">중도금 이자는요?</div><div class="a">중도금 60%는 6번에 나눠 내고, 이자는 후불제예요. 입주할 때 정산합니다.</div></div>
+  <div class="qa"><div class="q">입주 전에 팔 수 있어요?</div><div class="a">전매제한이 1년이라 2027년 9월 이후부터 입주 전에도 팔 수 있어요. 실거주 의무도 없어요.</div></div>
+  <div class="qa"><div class="q">언제 들어가요?</div><div class="a">2030년 4월 입주 예정이에요.</div></div>
+</div>
+
+<div class="card">
+  <h2>☎️ 상담 메모</h2>
+  <div class="memo">
+    <div>대표 문의: ______________________</div>
+    <div>담당자: ______________________</div>
+    <div>대기 손님: ______ 팀</div>
+  </div>
+</div>
+
+<div class="warn" style="margin-top:14px">
+  <b>⚠️ 말할 때 조심할 것</b><br>
+  철도·학교·공원·뮤지엄파크는 모두 <b>"예정"</b>이에요. 확정처럼 말하지 말고 "개통 예정, 개교 예정"이라고 말해야 해요. 바다 조망은 동·층마다 달라서 "일부 세대"라고 말하는 게 안전해요. 6억원 이상 계약은 30일 안에 자금조달계획서를 내야 해요.
+</div>
+</section>
+
+<p class="foot">자료: 언론 보도(헤럴드경제·위키트리, 2026년 8~9월)와 분양 홍보 자료를 정리. 정확한 조건은 입주자모집공고와 분양계약서 기준.</p>
+</div>
+<script>
+const q=new URLSearchParams(location.search).get('p');
+if(q){document.body.classList.add('shot');document.querySelectorAll('section').forEach(s=>{if(s.id!==q)s.style.display='none'});document.querySelector('.foot').style.display='none'}
+</script>
+</body>
+</html>
